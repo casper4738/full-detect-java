@@ -1,7 +1,18 @@
 # Find Java
 
+## Execute Bat
+```
+1. Buka CMD 
+2. jalankan run-detect-full-java.bat
+```
 
-1. Extract Zip
-2. Buka CMD  dan jalankan run-detect-full-java.bat
-3. atau klik 2x run-detect-full-java.bat
-4. Result dalam bentuk file Java-Information.txt
+atau 
+``` 
+klik 2x run-detect-full-java.bat
+```
+
+## Result
+Result dalam bentuk file `Java-Information.txt`
+
+![Alt text](image-1.jpg?raw=true "Image 1")
+![Alt text](image-2.png?raw=true "Image 2")
