@@ -2,18 +2,23 @@ Function DetectJava($FileSystem) {
 	Get-Childitem -Path "$FileSystem" -Filter 'java.exe' -Recurse -Force -ErrorAction SilentlyContinue | ForEach-Object {
 		
 		$PropertiesVersion 	= & "$($_.FullName)" -XshowSettings:properties -version 2>&1 
-		$Vendor 			= $PropertiesVersion | Select-String -Pattern "java.vendor =" | ForEach-Object { ($_.Line -replace 'java.vendor =', '').Trim() }  
-		$VendorVersion 		= $PropertiesVersion | Select-String -Pattern "java.vendor.version =" | ForEach-Object { ($_.Line -replace 'java.vendor.version =', '').Trim() }  
-		$Version 			= $PropertiesVersion | Select-String -Pattern "java.version =" | ForEach-Object { ($_.Line -replace 'java.version =', '').Trim() }  
-		$VersionDate 		= $PropertiesVersion | Select-String -Pattern "java.version.date =" | ForEach-Object { ($_.Line -replace 'java.version.date =', '').Trim() }  
-		$RuntimeVersion 	= $PropertiesVersion | Select-String -Pattern "java.runtime.version =" | ForEach-Object { ($_.Line -replace 'java.runtime.version =', '').Trim() }  
-		$RuntimeName 		= $PropertiesVersion | Select-String -Pattern "java.runtime.name =" | ForEach-Object { ($_.Line -replace 'java.runtime.name =', '').Trim() }  
-		$OsArch 			= $PropertiesVersion | Select-String -Pattern "os.arch =" | ForEach-Object { ($_.Line -replace 'os.arch =', '').Trim() }  
-		$OsName 			= $PropertiesVersion | Select-String -Pattern "os.name =" | ForEach-Object { ($_.Line -replace 'os.name =', '').Trim() }  
-		$OsVersion 			= $PropertiesVersion | Select-String -Pattern "os.version =" | ForEach-Object { ($_.Line -replace 'os.version =', '').Trim() }  
-		$JavaHome 			= $PropertiesVersion | Select-String -Pattern "java.home =" | ForEach-Object { ($_.Line -replace 'java.home =', '').Trim() }  
-		$UserName 			= $PropertiesVersion | Select-String -Pattern "user.name =" | ForEach-Object { ($_.Line -replace 'user.name =', '').Trim() }  
+		$Vendor 			= $PropertiesVersion | Select-String -Pattern "java.vendor =" 			| ForEach-Object { ($_.Line -replace 'java.vendor =', '').Trim() }  
+		$VendorVersion 		= $PropertiesVersion | Select-String -Pattern "java.vendor.version =" 	| ForEach-Object { ($_.Line -replace 'java.vendor.version =', '').Trim() }  
+		$Version 			= $PropertiesVersion | Select-String -Pattern "java.version =" 			| ForEach-Object { ($_.Line -replace 'java.version =', '').Trim() }  
+		$VersionDate 		= $PropertiesVersion | Select-String -Pattern "java.version.date =" 	| ForEach-Object { ($_.Line -replace 'java.version.date =', '').Trim() }  
+		$RuntimeVersion 	= $PropertiesVersion | Select-String -Pattern "java.runtime.version =" 	| ForEach-Object { ($_.Line -replace 'java.runtime.version =', '').Trim() }  
+		$RuntimeName 		= $PropertiesVersion | Select-String -Pattern "java.runtime.name =" 	| ForEach-Object { ($_.Line -replace 'java.runtime.name =', '').Trim() }  
+		$OsArch 			= $PropertiesVersion | Select-String -Pattern "os.arch =" 				| ForEach-Object { ($_.Line -replace 'os.arch =', '').Trim() }  
+		$OsName 			= $PropertiesVersion | Select-String -Pattern "os.name =" 				| ForEach-Object { ($_.Line -replace 'os.name =', '').Trim() }  
+		$OsVersion 			= $PropertiesVersion | Select-String -Pattern "os.version =" 			| ForEach-Object { ($_.Line -replace 'os.version =', '').Trim() }  
+		$JavaHome 			= $PropertiesVersion | Select-String -Pattern "java.home =" 			| ForEach-Object { ($_.Line -replace 'java.home =', '').Trim() }  
+		$UserName 			= $PropertiesVersion | Select-String -Pattern "user.name =" 			| ForEach-Object { ($_.Line -replace 'user.name =', '').Trim() }  
 		
+		
+		if (-not $Vendor) {
+			$Vendor = "(unknown)"
+		}
+
 		[PsCustomObject]@{
 			'Vendor' 			= $Vendor
 			'Release Version'   = $RuntimeVersion + " ($($RuntimeName)) "
@@ -49,7 +54,7 @@ $User 		 = [System.Security.Principal.WindowsIdentity]::GetCurrent().Name
 $Drives 	 = GetDrive
 $DriveString = $Drives -join ", " 
 
-Write-Host "  User : " + $User
+Write-Host "  User         : $($User)" 
 Write-Host "  Drive Detect : [$($DriveString)] "
 Write-Host 
 Write-Host 
