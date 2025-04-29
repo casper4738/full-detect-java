@@ -1,12 +1,12 @@
 ﻿**********************
 Windows PowerShell transcript start
-Start time: 20250429102242
+Start time: 20250429120205
 Username: BCADOMAIN\U058627
 RunAs User: BCADOMAIN\U058627
 Configuration Name: 
 Machine: P090WFA058627 (Microsoft Windows NT 10.0.22631.0)
 Host Application: powershell -executionpolicy bypass -File detect-java.ps1
-Process ID: 20180
+Process ID: 3196
 PSVersion: 5.1.22621.4391
 PSEdition: Desktop
 PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.22621.4391
@@ -26,36 +26,36 @@ Transcript started, output file is Java-Information.txt
 
 Scanning in Drive : C
 
-Vendor             Version                                         Operation System      User    Java Home
-------             -------                                         ----------------      ----    ---------
-Eclipse Adoptium   17.0.8.1 (Temurin-17.0.8.1+1 - 2023-08-24)      Windows 11 10.0 amd64 U058627 C:\Program Files\Eclipse Adoptium\jdk-17.0.8.101-hotspot
-Microsoft          11.0.15 (Microsoft-32930 - 2022-04-19)          Windows 11 10.0 amd64 U058627 C:\Program Files\Microsoft\jdk-11.0.15.10-hotspot
-                    ( - )
-Oracle Corporation 1.8.0_261 ( - )                                 Windows 10 10.0 x86   U058627 C:\Program Files (x86)\Experitest\AppiumStudio\jre
-Oracle Corporation 1.8.0_171 ( - )                                 Windows 10 10.0 amd64 U058627 C:\Program Files (x86)\Experitest\AppiumStudio\jre64
-Azul Systems, Inc. 11.0.25 (Zulu11.76+21-CA - 2024-10-15)          Windows 11 10.0 amd64 U058627 C:\ProgramData\Zulu\zulu-11
-Azul Systems, Inc. 17.0.13 (Zulu17.54+21-CA - 2024-10-15)          Windows 11 10.0 amd64 U058627 C:\ProgramData\Zulu\zulu-17
-Azul Systems, Inc. 21.0.5 (Zulu21.38+21-CA - 2024-10-15)           Windows 11 10.0 amd64 U058627 C:\ProgramData\Zulu\zulu-21
-Azul Systems, Inc. 1.8.0_432 ( - )                                 Windows 11 10.0 amd64 U058627 C:\ProgramData\Zulu\zulu-8\jre
-Azul Systems, Inc. 1.8.0_432 ( - )                                 Windows 11 10.0 amd64 U058627 C:\ProgramData\Zulu\zulu-8\jre
-Eclipse Adoptium   21.0.6 (Temurin-21.0.6+7 - 2025-01-21)          Windows 11 10.0 amd64 U058627 C:\Users\u058627\.vscode\extensions\redhat.java-1.40.0-win32-x64\...
-Eclipse Adoptium   21.0.6 (Temurin-21.0.6+7 - 2025-01-21)          Windows 11 10.0 amd64 U058627 C:\Users\u058627\.vscode\extensions\redhat.java-1.41.1-win32-x64\...
-JetBrains s.r.o.   17.0.7 (JBR-17.0.7+7-1000.6-jcef - 2023-04-18)  Windows 11 10.0 amd64 U058627 C:\Users\u058627\AppData\Local\JetBrains\IntelliJ IDEA Community ...
+Vendor             Release Version                                  Vendor Version                                  Operation System         User    Java Home
+------             ---------------                                  --------------                                  ----------------         ----    ---------
+Eclipse Adoptium   17.0.8.1+1 (OpenJDK Runtime Environment)         17.0.8.1 (Temurin-17.0.8.1+1 - 2023-08-24)      Windows 11 (10.0-amd64)  U058627 C:\Program Files\Eclipse Adoptium\jdk-17.0.8.101-hotspot
+Microsoft          11.0.15+10-LTS (OpenJDK Runtime Environment)     11.0.15 (Microsoft-32930 - 2022-04-19)          Windows 11 (10.0-amd64)  U058627 C:\Program Files\Microsoft\jdk-11.0.15.10-hotspot
+                    ()                                               ( - )                                           (-)
+Oracle Corporation 1.8.0_261-b12 (Java(TM) SE Runtime Environment)  1.8.0_261 ( - )                                 Windows 10 (10.0-x86)    U058627 C:\Program Files (x86)\Experitest\AppiumStudio\jre
+Oracle Corporation 1.8.0_171-b11 (Java(TM) SE Runtime Environment)  1.8.0_171 ( - )                                 Windows 10 (10.0-amd64)  U058627 C:\Program Files (x86)\Experitest\AppiumStudio\jre64
+Azul Systems, Inc. 11.0.25+9-LTS (OpenJDK Runtime Environment)      11.0.25 (Zulu11.76+21-CA - 2024-10-15)          Windows 11 (10.0-amd64)  U058627 C:\ProgramData\Zulu\zulu-11
+Azul Systems, Inc. 17.0.13+11-LTS (OpenJDK Runtime Environment)     17.0.13 (Zulu17.54+21-CA - 2024-10-15)          Windows 11 (10.0-amd64)  U058627 C:\ProgramData\Zulu\zulu-17
+Azul Systems, Inc. 21.0.5+11-LTS (OpenJDK Runtime Environment)      21.0.5 (Zulu21.38+21-CA - 2024-10-15)           Windows 11 (10.0-amd64)  U058627 C:\ProgramData\Zulu\zulu-21
+Azul Systems, Inc. 1.8.0_432-b06 (OpenJDK Runtime Environment)      1.8.0_432 ( - )                                 Windows 11 (10.0-amd64)  U058627 C:\ProgramData\Zulu\zulu-8\jre
+Azul Systems, Inc. 1.8.0_432-b06 (OpenJDK Runtime Environment)      1.8.0_432 ( - )                                 Windows 11 (10.0-amd64)  U058627 C:\ProgramData\Zulu\zulu-8\jre
+Eclipse Adoptium   21.0.6+7-LTS (OpenJDK Runtime Environment)       21.0.6 (Temurin-21.0.6+7 - 2025-01-21)          Windows 11 (10.0-amd64)  U058627 C:\Users\u058627\.vscode\extensions\redhat.java-1.40.0-win32-x64\jre\21.0.6-win32-x86_64
+Eclipse Adoptium   21.0.6+7-LTS (OpenJDK Runtime Environment)       21.0.6 (Temurin-21.0.6+7 - 2025-01-21)          Windows 11 (10.0-amd64)  U058627 C:\Users\u058627\.vscode\extensions\redhat.java-1.41.1-win32-x64\jre\21.0.6-win32-x86_64
+JetBrains s.r.o.   17.0.7+7-b1000.6 (OpenJDK Runtime Environment)   17.0.7 (JBR-17.0.7+7-1000.6-jcef - 2023-04-18)  Windows 11 (10.0-amd64)  U058627 C:\Users\u058627\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2023.2\jbr
 
 
 Scanning in Drive : D
 
-Vendor             Version                                            Operation System      User    Java Home
-------             -------                                            ----------------      ----    ---------
-JetBrains s.r.o.   21.0.5 ( - 2024-10-15)                             Windows 11 10.0 amd64 U058627 D:\Programs\android-studio-2024.2.2.15\jbr
-JetBrains s.r.o.   17.0.11 (JBR-17.0.11+1-1207.24-jcef - 2024-04-16)  Windows 11 10.0 amd64 U058627 D:\Programs\ideaIC-2024.1.4.win\jbr
-Oracle Corporation 21.0.2 ( - 2024-01-16)                             Windows 11 10.0 amd64 U058627 D:\Programs\jdk-21.0.2
-Azul Systems, Inc. 11.0.22 (Zulu11.70+15-CA - 2024-01-16)             Windows 11 10.0 amd64 U058627 D:\Programs\nexus\nexus-3.69.0-02\jre
-Oracle Corporation 11 (18.9 - 2018-09-25)                             Windows 10 10.0 amd64 U058627 D:\Programs\openjdk-11
-Microsoft          17.0.6 (Microsoft-7209853 - 2023-01-17)            Windows 11 10.0 amd64 U058627 D:\Programs\openjdk-17.0.6+10
-BellSoft           21.0.1 ( - 2023-10-17)                             Windows 11 10.0 amd64 U058627 D:\Programs\openjdk-21.0.1
-BellSoft           11.0.17 ( - 2022-10-18)                            Windows 11 10.0 amd64 U058627 D:\Programs\pdfsam-4.3.4-windows\runtime
-Azul Systems, Inc. 17.0.7 (Zulu17.42+19-CA - 2023-04-18)              Windows 11 10.0 amd64 U058627 D:\workspace\docterbox\DocterBox\jdk17.0.7
+Vendor             Release Version                                         Vendor Version                                     Operation System         User    Java Home
+------             ---------------                                         --------------                                     ----------------         ----    ---------
+JetBrains s.r.o.   21.0.5+-13047016-b750.29 (OpenJDK Runtime Environment)  21.0.5 ( - 2024-10-15)                             Windows 11 (10.0-amd64)  U058627 D:\Programs\android-studio-2024.2.2.15\jbr
+JetBrains s.r.o.   17.0.11+1-b1207.24 (OpenJDK Runtime Environment)        17.0.11 (JBR-17.0.11+1-1207.24-jcef - 2024-04-16)  Windows 11 (10.0-amd64)  U058627 D:\Programs\ideaIC-2024.1.4.win\jbr
+Oracle Corporation 21.0.2+13-58 (OpenJDK Runtime Environment)              21.0.2 ( - 2024-01-16)                             Windows 11 (10.0-amd64)  U058627 D:\Programs\jdk-21.0.2
+Azul Systems, Inc. 11.0.22+7-LTS (OpenJDK Runtime Environment)             11.0.22 (Zulu11.70+15-CA - 2024-01-16)             Windows 11 (10.0-amd64)  U058627 D:\Programs\nexus\nexus-3.69.0-02\jre
+Oracle Corporation 11+28 (OpenJDK Runtime Environment)                     11 (18.9 - 2018-09-25)                             Windows 10 (10.0-amd64)  U058627 D:\Programs\openjdk-11
+Microsoft          17.0.6+10-LTS (OpenJDK Runtime Environment)             17.0.6 (Microsoft-7209853 - 2023-01-17)            Windows 11 (10.0-amd64)  U058627 D:\Programs\openjdk-17.0.6+10
+BellSoft           21.0.1+12-LTS (OpenJDK Runtime Environment)             21.0.1 ( - 2023-10-17)                             Windows 11 (10.0-amd64)  U058627 D:\Programs\openjdk-21.0.1
+BellSoft           11.0.17+7-LTS (OpenJDK Runtime Environment)             11.0.17 ( - 2022-10-18)                            Windows 11 (10.0-amd64)  U058627 D:\Programs\pdfsam-4.3.4-windows\runtime
+Azul Systems, Inc. 17.0.7+7-LTS (OpenJDK Runtime Environment)              17.0.7 (Zulu17.42+19-CA - 2023-04-18)              Windows 11 (10.0-amd64)  U058627 D:\workspace\docterbox\DocterBox\jdk17.0.7
 
 
 Java information saved to: Java-Information.txt
@@ -64,5 +64,5 @@ PS>$global:?
 True
 **********************
 Windows PowerShell transcript end
-End time: 20250429102521
+End time: 20250429120432
 **********************
