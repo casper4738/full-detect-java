@@ -21,7 +21,7 @@ Function DetectJava($FileSystem) {
 			'Operation System' 	= $OsName + " (" + $OsVersion + "-" + $OsArch +") "
 			'User' 				= $UserName
 			'Java Home'     	= $JavaHome
-			#'Path'       		= $_.FullName
+			'Path'       		= $_.FullName
 		}
 		 
 	} #| Select-Object -First 2
@@ -36,7 +36,7 @@ Function GetDrive {
 
 
 
-$Host.UI.RawUI.BufferSize = New-Object System.Management.Automation.Host.Size 1000, 5000
+$Host.UI.RawUI.BufferSize = New-Object System.Management.Automation.Host.Size 1500, 5000
 $OutputFile = "Java-Information.txt"
 
 Start-Transcript -Path "$OutputFile"
